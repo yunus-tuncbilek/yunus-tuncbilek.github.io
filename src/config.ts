@@ -27,6 +27,14 @@ export const siteConfig = {
   ],
   projects: [
     {
+      name: "US Census Employment Data Recovery Solver",
+      description:
+        "Linear programming solver in Python/Gurobi recovering the ~60% of US Census county-industry employment cells suppressed for confidentiality, using the data's nested geographic and industry hierarchies as constraints. Cut per-year runtime from two days to twenty minutes; underpins a public 1975-2016 county panel used in spatial economics.",
+      note: "In support of the research of Eckert, Fort, Schott & Yang (Yale, Dartmouth, Columbia)",
+      link: "https://www.nber.org/papers/w26632",
+      skills: ["Python", "Gurobi", "Linear Programming", "HPC"],
+    },
+    {
       name: "Math-Mate",
       description:
         "AI tutoring assistant leveraging Retrieval-Augmented Generation (RAG) to give students context-aware, step-by-step explanations for their homework, plus a 'Teacher Review' module for auditing interactions and surfacing common learning roadblocks.",

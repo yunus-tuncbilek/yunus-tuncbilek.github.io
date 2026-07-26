@@ -71,6 +71,12 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                           </h3>
                         </div>
 
+                        {project.note && (
+                          <p class="text-sm sm:text-base text-gray-500 italic leading-relaxed">
+                            {project.note}
+                          </p>
+                        )}
+                        
                         <p
                           class={`text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
                         >
