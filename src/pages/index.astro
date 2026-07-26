@@ -6,6 +6,7 @@ import Projects from "../components/Projects.astro";
 import Experience from "../components/Experience.astro";
 import Education from "../components/Education.astro";
 import Footer from "../components/Footer.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
 ---
@@ -24,8 +25,16 @@ import "../styles/global.css";
       rel="stylesheet"
     />
     <title>{siteConfig.name} - {siteConfig.title}</title>
+    <style
+      is:global
+      set:html={`
+        :root { --accent-color: ${siteConfig.accentColor}; }
+        html.dark { --accent-color: ${siteConfig.accentColorDark}; }
+      `}
+    />
   </head>
   <body>
+    <ThemeToggle />
     <Header />
     <section>
       <Hero />

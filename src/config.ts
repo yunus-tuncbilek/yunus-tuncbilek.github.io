@@ -3,6 +3,7 @@ export const siteConfig = {
   title: "Software Engineer",
   description: "Portfolio website of Yunus Tuncbilek",
   accentColor: "#1d4ed8",
+  accentColorDark: "#60a5fa",
   social: {
     email: "yunust418@gmail.com",
     linkedin: "https://www.linkedin.com/in/yunus-tuncbilek-5ab13a318/",

@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* Enable class-based dark mode (toggle via `.dark` on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   font-family: 'IBM Plex Mono', monospace;
+}
+
+html {
+  background-color: white;
+}
+
+html.dark {
+  background-color: #030712;
+  /* gray-950 */
 }
