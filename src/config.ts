@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/yunus-tuncbilek",
   },
   aboutMe:
-    "Software engineer with a research background spanning applied mathematics, optimization, and AI systems. Yale CS & Math grad who went on to doctoral studies in Analytic Number Theory at UW-Madison, with hands-on engineering experience ranging from a 1000x runtime optimization on Yale's HPC clusters to building an open-source ROS computer-vision wrapper for pre-release social robotics hardware. Currently building RAG-powered tutoring tools and teaching competitive programming and advanced algorithms.",
+    "Yale CS & Math grad who recognized that a long-standing problem in US Census employment data was really a linear program — the Gurobi solver I built cut per-year runtime from over two days to twenty minutes, replaced an approximate method with exact solutions, and produced a dataset now used across spatial economics. Also shipped an open-source C++/ROS computer-vision wrapper on pre-release social robotics hardware, and spent two years teaching competition-level algorithms after graduate work in analytic number theory. Currently building RAG-powered tutoring tools; looking for backend or optimization-heavy engineering.",
   skills: [
     "Python",
     "Java",
