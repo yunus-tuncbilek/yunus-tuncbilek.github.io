@@ -13,6 +13,15 @@ import "../styles/global.css";
 
 <html lang="en">
   <head>
+    <script>
+      // if the user has a theme preference, use it; otherwise, default to light mode
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        // console.log("User prefers dark mode");
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
@@ -31,7 +40,7 @@ import "../styles/global.css";
         :root { --accent-color: ${siteConfig.accentColor}; }
         html.dark { --accent-color: ${siteConfig.accentColorDark}; }
       `}
-    />
+    ></style>
   </head>
   <body>
     <ThemeToggle />
